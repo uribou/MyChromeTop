@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "MyChromeTop",
+  "version": "0.1",
+  "description": "My Chrome Top Page",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://www.google.com/_/chrome/newtab*"],
+      "js": ["main.js"]
+    }
+  ]
+}
